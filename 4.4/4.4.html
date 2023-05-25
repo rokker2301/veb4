@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let msw;
+        let lang = "рус";
+        if (lang === "рус") {
+            msw = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"];
+        } else if (lang === "бел") {
+            msw = ["Панядзелак", "Аўторак", "Серада", "Чацверг", "Пятніца", "Субота", "Нядзеля"]
+        } else if (lang === "eng") {
+            msw = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        }
+        alert(msw)
+
+
+        const some_str = "abcde12345";
+        k = 2
+        const Letter = some_str.charAt(k)
+        const isLetter = /[a-zA-Z]/.test(Letter)
+
+        alert(isLetter);
+
+        summ = Number(some_str[5]) + Number(some_str[6]) + Number(some_str[7]) + Number(some_str[8]) + Number(some_str[9])
+        if (summ % 2 == 0) {
+            alert("сумма четная");
+        } else {
+            alert("Сумма не четная")
+        }
+
+        let date = new Date("2023-05-23")
+
+        let month = date.getMonth()
+
+        let season;
+        if (month === 11 || month <= 1) {
+            season = "зима"
+        }
+        else if (month >= 2 && month <= 4) {
+            season = "весна"
+        }
+        else if (month >= 5 && month <= 7) {
+            season = "лето"
+        }
+        else if (month >= 8 && month <= 10) {
+            season = "осень"
+        }
+        alert(season)
+        let monthNames = ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"];
+
+        let monthName = monthNames[month];
+        alert(monthName)
+
+
+
+        let array = [11, 1, 4, 6, 8, 10, 3, 5, 7, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54];
+        let sum_chet = 0;
+        let krat3 = 1;
+
+        for (let i = 0; i < array.length; i++) {
+
+            if (array[i] % 2 === 0) {
+                sum_chet += array[i];
+            }
+
+            if (array[i] % 3 === 0) {
+                krat3 *= array[i];
+            }
+        }
+
+        alert(sum_chet)
+        alert(krat3)
+
+
+
+    </script>
+</body>
+
+</html>

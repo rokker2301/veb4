@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let R = ["k", "m", "s"];
+
+        R.unshift(4, 3, 1);
+        R.push("dadak", "mdada", "his");
+
+        alert(R)
+
+        let arr = [];
+
+        for (let i = 0; i < 5; i++) {
+            arr[i] = [];
+            for (let j = 0; j < 8; j++) {
+                arr[i][j] = Math.floor(Math.random() * 100);
+            }
+        }
+
+        for (let i = 0; i < 5; i += 2) {
+            arr[i].sort((a, b) => a - b);
+        }
+
+        alert(arr)
+
+        let array = [
+            [4, 'hello', "but", 9, 3],
+            ['white', 4, 5, 'fafafa', 6],
+            [7, 'dragon', 8, 9, 'night'],
+            ['glock', 10, 11, 'print', 12],
+            [13, 'text', 14, 'png', 15],
+            ['txt', 16, 17, 'dc', 18]
+        ];
+
+        // число в строку(сделать с array.join)
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (typeof array[i][j] === "number") {
+                    array[i][j] = array[i][j].toString();
+                }
+            }
+        }
+
+        array.reverse();
+
+        alert(array)
+        
+        let mass = []
+
+        for (let i = 0; i < 7; i++) {
+            mass[i] = [];
+            for (let j = 0; j < 6; j++) {
+                mass[i][j] = `(${i},${j})`;
+            }
+        }
+
+        mass.unshift(['daf', 'l', 'da', 'sea;', 'lad', 'ca']);
+        mass.unshift(['fds', 'afra', 'fff', 'aa', 'a', 'al']);
+        mass.unshift(['ff', 'ss', 'vv', 'sd', 'b', 'a']);
+        mass.unshift(['wolf', 'fork', 'wolk', 'h', 'add', 'kas']);
+
+        mass.pop();
+        mass.pop();
+        mass.pop();
+
+        alert(mass)
+
+    </script>
+</body>
+
+</html>

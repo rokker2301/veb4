@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+        // 1
+        let word = "hello world"
+        document.getElementById("demo").innerHTML = word
+        let abc = 'abcdefghijklmnopqrstuvwxyz'
+        alert(abc[0] + '-1 '+abc[2] + '-1 '+abc[4] + '-1 '+abc[5] + '-1 '+abc[7] + '-1 '+abc[8] + '-1')
+
+        let num = "010305060809"
+        let str_1 = num.slice(0, 3)
+        let str_2 = num.slice(3, 6)
+        let str_3 = num.slice(6, 9)
+        let str_4 = num.slice(9, 13)
+
+        let num_1 = Number(str_1)
+        let num_2 = Number(str_2)
+        let num_3 = Number(str_3)
+        let num_4 = Number(str_4)
+
+        let first = (Math.pow(num_1, 2) + Math.pow(num_2, 2)) / num_3
+        let second = (num_4 / (num_1 - (num_2 / 2)))
+        alert(first)
+        alert(second)
+
+        let answer = confirm("Вы хотите вычислить значение?");
+        let result = 0
+
+        function calculate(choice) {
+            if (choice === 'y') {
+                result = (Math.pow(num_1, 2) + Math.pow(num_2, 2)) / num_3;
+            } else {
+                result = (num_4 / (num_1 - (num_2 / 2)))
+            }
+            document.writeln("Результат: " + result);
+        }
+        
+        if (answer) {
+            calculate('y');
+        } else {
+            calculate('f');
+        }
+        // 1
+    </script>
+
+</body>
+
+</html>

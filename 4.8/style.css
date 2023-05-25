@@ -1,0 +1,8 @@
+.div{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 505px;
+    height: 300px;
+}
